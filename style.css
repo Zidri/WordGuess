@@ -40,13 +40,12 @@ h2{
     margin: 10px;
     padding: 10px;
     width: 50%;
-    min-height: 150px;
+    min-height: 150px;  
+
     
 }
 
-.problem{
-    display: flex;    
-    justify-content: center;
+#answerWord{
     font-size: 2rem;
     line-height: 200%;
 }
@@ -54,6 +53,9 @@ h2{
 .btnCenter{
     display: flex;
     justify-content: center;
+    
+    flex-direction: column;
+    text-align: center;
 }
 
 .btn{    
@@ -72,7 +74,7 @@ h2{
 
 .answerDisplay {
     background-color: #FFB4A2;
-    width: 50%;
+    width: 80%;
     min-height: 150px;
     margin: 10px;
 
