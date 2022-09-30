@@ -44,20 +44,7 @@
     </div>
     <div class="container">
 
-        <div class="generator">
-           <!-- <form name="startForm" method="post" action="index.php">
-                <div class="btnCenter">
-                    <input type="submit" class="btn" id="startBtn" value="Start">
-                    <input type="hidden" name="gameStart" value="1">
-            </form> -->
-
-            <div id="answerWord">
-                <div class="letter" id="answerletter1">'.$wordChrs[0].'</div>
-                <div class="letter" id="answerletter2">'.$wordChrs[1].'</div>
-                <div class="letter" id="answerletter3">'.$wordChrs[2].'</div>
-                <div class="letter" id="answerletter4">'.$wordChrs[3].'</div>
-                <div class="letter" id="answerletter5">'.$wordChrs[4].'</div>
-            </div>
+        <div class="generator">            
 
             <div class="tries">
             <div class="tryword">
@@ -104,12 +91,24 @@
 
 
         <div class="answerDisplay">
-            <div class="winCnt" id="winCnt">Wins: 0</div>
+            <div id="answerWord">
+                <div class="letter" id="answerletter1">'.$wordChrs[0].'</div>
+                <div class="letter" id="answerletter2">'.$wordChrs[1].'</div>
+                <div class="letter" id="answerletter3">'.$wordChrs[2].'</div>
+                <div class="letter" id="answerletter4">'.$wordChrs[3].'</div>
+                <div class="letter" id="answerletter5">'.$wordChrs[4].'</div>
+            </div>
+
             <div class="answerWarning" id="answerWarning"></div>
-            <form name="answerForm" method="post">
+            <form class="answerForm" name="answerForm" method="post">
                 <input type="text" id="userAns" name="userAns">
                 <button type="button" class="btn" id="answerBtn" onclick="answerCheck()">Answer</button>
                 <input type="hidden" name="ansWord" value="'.$word.'">
+            </form>
+
+            <form class = "againForm" name="againForm" method="post" action="index.php">                    
+                <input type="submit" class="btn" id="startBtn" value="Play Again">
+                <input type="hidden" name="gameStart" value="1">
             </form>
 
         </div>

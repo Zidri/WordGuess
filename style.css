@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 body {
-    background-color: #F7EDE2;
+    background-color: #3B2327;
     padding: 10px;
     font-family: 'Kanit', sans-serif;
+    color: #855E5C;
 }
 
 h1{
-    color: #B7897B;
+    
     font-size: 3rem;
     text-align: center;
     font-weight: 600;
@@ -18,7 +19,7 @@ h1{
 }
 
 h2{
-    color: #B7897B;
+    
     font-size: 2rem;
     text-align: center;
     font-weight: 600;
@@ -26,7 +27,7 @@ h2{
 }
 
 .header {
-    background-color: #F5CAC3;
+    background-color: #E39E83;
 }
 
 .container{
@@ -36,11 +37,9 @@ h2{
 }
 
 .generator {
-    background-color: #DAD3C9;
+    background-color: #E39E83;
     margin: 10px;
     padding: 10px;
-    /* width: 80%; */
-    /* min-height: 150px;   */
 }
 
 #answerWord{
@@ -48,7 +47,7 @@ h2{
     line-height: 200%;
     text-align: center;
 
-    display: flex;
+    display: none;
     justify-content: space-evenly;
 }
 
@@ -63,7 +62,7 @@ h2{
 }
 
 .letter{
-    background-color: #BDB8B0;
+    background-color: #F7BF97;
     font-weight: 600;
     width: 4rem;
 }
@@ -77,15 +76,17 @@ h2{
 }
 
 .btn{    
-    background-color: #B5838D;
+    background-color: #F7E2A9;
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     border: black solid 1px;
+    font-family: 'Kanit', sans-serif;
+    color: #855E5C;
 }
 
 .btn:hover{
-    background-color: #B7897B;
+    background-color: #F7BF97;
 }
 
 #answerBtn{
@@ -102,21 +103,13 @@ h2{
 }
 
 .answerDisplay {
-    background-color: #F5CAC3;
-    /* width: 80%; */
-    min-height: 150px;
+    background-color: #E39E83;
     margin: 10px;
-
-    color: #B7897B;
+    padding: 15px;
+    
     text-align: center;
     font-size: 1.5rem;
     line-height: 150%;
-}
-
-.lives{
-    font-size: 2rem;
-    margin: 10px;
-    color: #B71515;
 }
 
 .answerForm {    
@@ -124,3 +117,6 @@ h2{
     margin: 15px;   
 }
 
+.againForm{
+    display: none;
+}
